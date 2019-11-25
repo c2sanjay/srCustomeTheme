@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+width:1280px;
+max-width: 100%;
+text-align: center;
+margin:0 auto;
+height:100vh;
+position: relative;
+
+}
+/*========================== Login css ============================== */
+section#login{
+    background: #000;
+    background-image: url(../assets/images/bg-greenlx.png), linear-gradient(#000, rgb(31, 29, 29)); ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    float: left;
+    width: 100%;
+    height:100vh;
+    position: absolute;
+}
+#login .logo-bar{
+    width:100%;
+    padding: 30px 0px 0 30px;
+    float: left;
+}
+#login .logo-bar .top-header{
+    float: left;
+    margin: 0px 0px 0 30px;
+}
+#login .logo-bar .svg-logo{
+    float: right;
+    margin: 0px 30px 0 0;
+}
+.block-left{
+    float:left;
+    padding:90px 52px 0 130px;
+    color:#fff;
+}
+.block-right{
+    position: absolute;
+    right: 0;
+    top:50px
+}
+
+.block-right .img-wrap img {
+    float: right;
+}
+.block-left .title{
+    font-size:20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.block-left .subtitle{
+    font-size: 18px;
+    color:#97999b;
+    margin-bottom: 30px;
+}
+.login-form .input-field{
+    position:relative;
+    margin-bottom: 30px;
+}
+.login-form .input-field input{
+    width:390px;
+    border-radius: 0;
+    color: #000;
+    border: 0;
+    padding: 14px 36px;
+    font-size: 16px;
+}
+.input-field input[type=text] {
+    background: #fff url(../assets/images/login-icon.png) no-repeat;
+    background-position: 12px;
+}
+.input-field input[type=password] {
+    background: #fff url(../assets/images/pass-icon.png) no-repeat;
+    background-position: 12px;
+}
+::placeholder {
+    color: #000;
+    font-size:16px
+  }
+.login-form .forgot-pwd{
+display: block;
+float: right;
+color: #fff;
+font-size: 16px;
+margin-bottom: 30px;
+transition: 0.3s;
+cursor:pointer;
+
+}
+.login-form .forgot-pwd:hover{
+color:#0076a8;
+}
+.login-form .btn-login {
+    background: #0076a8;
+    color: #fff;
+    width: 100%;
+    padding: 12px 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+  
+}
+.login-form .btn-login:hover{
+    background: #8bc34a;
+    transform:scale(1)
+}
+.img-responsive{
+    max-width: 660px;
+    height:auto;
+}
+/* ============================ INNER PAGE ================================= */
+header{
+    background:#0f0b0b;
+    width: 100%;
+    float: left;
+    padding: 20px;
+    border-bottom: 1px solid #53565a;
+    z-index:999;
+}
+header .innerLogo{
+    float:left;
+    margin: 10px;
+}
+header .profile-sec{
+    float:right;
+    color:#fff;
+    line-height: 40px;
+}
+header .profile-sec ul li{
+        list-style: none;
+        display:inline-block;
+        margin: 10px;
+        vertical-align: middle;
+        text-align: left;
+}
+header .profile-sec li.profile{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 1280px;
+  }
+
+  /* ================ dropdown ================= */
+  
+  header .profile-sec ul.dropdown-menu{
+    width: 276px;
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    margin:3% 1% 0 0;
+}
+header .profile-sec ul.dropdown-menu  li{
+    display: block;
+    margin:0;
+}
+header .profile-sec ul.dropdown-menu  li a{
+    font-size: 14px;
+    color:#000;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+header .profile-sec ul.dropdown-menu li a:hover{
+    background: #0076a8;
+    color:#fff;
+}
+.clearfix{
+    clear:both;
+}
+/* ========================== inner page ============== */
+section#innerpage{
+    background: #000;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    /* min-height: 100%; */
+    min-height: calc(100vh - 170px);
+  
+
+}
+#innerpage .dashboard {
+    float: left;
+    min-height: 475px;
+    overflow: auto;
+     position: relative;
+  
+}
+#innerpage .dashboard .dashbox{
+    position: relative;
+    width: 208px;
+    height: 196px;
+    background:#232323;
+    margin:20px;
+    float:left;
+    transition: all .3s ease;
+   }
+
+   #innerpage .dashboard .dashbox:hover{
+    /* position: relative; */
+    width: 208px;
+    height: 196px;
+    width: 249px;
+    height: 235px;
+    background:#fff;
+    z-index: 1; 
+    box-shadow:0 14px 28px rgba(11, 90, 124, 0.5), 6px 5px 6px rgba(21, 90, 119, 0.6);
+     margin:-4px; 
+   }
+#innerpage .dashboard .dashbox .card{
+    position: absolute;
+    color:#fff;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#innerpage .dashboard .dashbox .card .card-icon{
+    width:80px;
+    height:80px;
+    text-align: center;
+    border-radius:50%;
+    background: #fff;
+    margin-left: 10px;
+}
+#innerpage .dashboard .dashbox .card .card-body .card-title{
+    font-size:20px;
+    margin-top:20px;
+}
+#innerpage .dashboard .dashbox .card .card-body .card-text{
+    font-size:14px;
+    margin-top:10px;
+}
+/* ============================ Footer section ========================= */
+footer{
+        background:#000;
+        width: 100%;
+        float: left;
+        padding: 20px;
+        border-top: 1px solid #53565a;
+       
+}
+footer ul{
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 0 10px;
+    border-left:1px solid #ddd;
+}
+footer ul li:first-child{
+    border:none;
+}
+footer ul li a {
+    color: #0076a8;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: none;
+    cursor: pointer;
+  transition: all 0.5s;
+}
+footer ul li a:hover{
+    color: #6fcbf3;
+}
